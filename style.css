@@ -1,0 +1,47 @@
+:root {
+    --background_color: #000000;
+    --yellow: #edda0a;
+    --neon: #01d9fa;
+    --red: #ed3519;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: var(--background_color);
+}
+
+
+.box{
+    top: 40%;
+    left: 40%;
+    position: absolute;
+    display: block;
+    width: 10em;
+    height: 10em;
+    background: transparent;   
+    border-radius: 5%; 
+    padding: 3%;
+    animation: box 2s linear infinite;
+}
+
+@keyframes box {
+    0% {
+        border: solid 3px var(--yellow);
+    }
+
+    50% {
+     
+        rotate: 180deg;
+        border: solid 3px var(--neon)
+    }
+
+    100% { 
+        rotate: 360deg;
+        border: solid 3px var(--red);
+        }
+    }
+
+
+
+
